@@ -69,13 +69,13 @@ public class TransactionVerticle extends AbstractVerticle {
     private void handleAddTransaction(final RoutingContext routingContext) {
         final HttpServerResponse response = routingContext.response();
 
-        Transaction transaction = TransactionValidator.isValidTransactionRequest(routingContext, response);
+        final Transaction transaction = TransactionValidator.isValidTransactionRequest(routingContext, response);
 
         if (transaction == null) {
             return;
         }
 
-        boolean transactionAdded = transactionRepository.addTransaction(transaction);
+        final boolean transactionAdded = transactionRepository.addTransaction(transaction);
         response.setStatusCode(transactionAdded ? HttpResponseStatus.CREATED.code() : HttpResponseStatus.NO_CONTENT.code());
         response.end();
     }

@@ -1,8 +1,8 @@
-# Vertx REST API 
+# Vertx REST API  [![Build Status](https://travis-ci.org/mohasaid/vertx-rest-api.svg?branch=master)](https://travis-ci.org/mohasaid/vertx-rest-api)
 
 Restful API to calculate real time statistics from the last 60 seconds of the processed transactions. The API has 3 end points:
 
-**POST /transactions** - Registers a new transaction each time it happens with the time stamp and the amount.
+**POST /transactions** - Registers a new transaction each time it happens with the timestamp and the amount.
 
 **GET /statistics** - Returns the statistics (such as average, sum, maximum, minimum, count) based on the amount of the transactions from the last 60 seconds.
 

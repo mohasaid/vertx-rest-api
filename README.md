@@ -1,4 +1,4 @@
-# Vertx REST API  [![Build Status](https://travis-ci.org/mohasaid/vertx-rest-api.svg?branch=master)](https://travis-ci.org/mohasaid/vertx-rest-api)
+# Vertx REST API  [![Build Status](https://travis-ci.org/mohasaid/vertx-rest-api.svg?branch=master)](https://travis-ci.org/mohasaid/vertx-rest-api) [![codecov](https://codecov.io/gh/mohasaid/vertx-rest-api/branch/master/graph/badge.svg)](https://codecov.io/gh/mohasaid/vertx-rest-api)
 
 Restful API to calculate real time statistics from the last 60 seconds of the processed transactions. The API has 3 end points:
 
